@@ -22,7 +22,9 @@ body {
 	/* color: #d6d5a8; */
 }
 
-header {
+header,
+.about-me,
+.education {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -69,6 +71,8 @@ h2 {
 .formlink-container {
 	margin-top: 20px;
 	display: inline-block;
+	align-self: flex-end;
+	margin-bottom: 30px;
 }
 .formlink {
 	display: inline-flex;
@@ -76,9 +80,6 @@ h2 {
 	margin-top: 10px;
 }
 
-.formlink-container {
-	align-self: flex-end;
-}
 a {
 	color: white;
 	text-decoration: none;
@@ -88,11 +89,13 @@ svg.bi.bi-arrow-return-right {
 	margin-top: 7px;
 }
 
-/* h2,
-a {
-	font-family: "Anton", sans-serif;
-	font-weight: normal;
-} */
+.content-container {
+	max-width: 450px;
+}
+
+.content-container {
+	text-align: justify;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1022px) {
 	.wrapper {
@@ -104,10 +107,11 @@ a {
 	.wrapper {
 		min-width: 800px;
 	}
-	.head-container {
+	.head-container,
+	.about-me {
 		margin-top: 30px;
 		display: grid;
-		grid-template-columns: auto auto;
+		grid-template-columns: 450px auto;
 		grid-template-rows: auto auto;
 		/* gap: 50px; */
 	}
@@ -116,10 +120,12 @@ a {
 		padding-left: 20px;
 		margin-top: -50px;
 	}
-	.subtitle-container {
+	.subtitle-container,
+	.content-container {
 		grid-column: 1;
 	}
-	.head-pic-container {
+	.head-pic-container,
+	.desk-pic-container {
 		margin-left: 40px;
 		grid-column: 2;
 		grid-row: span 2;
