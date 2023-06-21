@@ -106,6 +106,13 @@ svg.bi.bi-arrow-return-right {
 	text-align: justify;
 }
 
+.contacts-container ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1022px) {
 	.wrapper {
 		min-width: 760px;
@@ -130,22 +137,33 @@ svg.bi.bi-arrow-return-right {
 		margin-top: -50px;
 	}
 	.subtitle-container,
-	.content-container,
-	.linkedin-container {
+	.content-container {
 		grid-column: 1;
 	}
 	.head-pic-container,
-	.desk-pic-container,
-	.email-container {
+	.desk-pic-container {
 		margin-left: 40px;
 		grid-column: 2;
 		grid-row: span 2;
 	}
-
 	footer {
-		margin-top: 50px;
-		display: grid;
-		grid-template-columns: 450px auto;
-		grid-template-rows: auto auto;
+		align-items: flex-start;
+	}
+	.foot-title-container {
+		margin-left: 50px;
+		margin-top: 30px;
+	}
+	.contacts-container {
+		width: 100%;
+		display: flex;
+	}
+	.contacts-container ul {
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.contact {
+		margin-left: 17px;
 	}
 }
